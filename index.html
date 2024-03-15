@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top ">
+        <a class="navbar-brand" href="#"><img src="" class="food-much-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="#home" id="navitems">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#exploremenusection" id="navitems">Flight Booking </a>
+                <a class="nav-link" href="#deliveryPaymentSection" id="navitems">Hotel Booking</a>
+                <a class="nav-link" href="#followUsSection" id="navitems">Fallow Us </a>
+            </div>
+        </div>
+    </nav>
+    <div class="main-container mt-5">
+        <div id="home mb-3">
+            <div class=" home-section">
+                <h1 class="greet-head"><span class="span">Welcome</span> to Gogaga Holidays</h1>
+                <p class="greet-des">Your gateway to unforgettable travel experiences.</p>
+            </div>
+        </div>
+        <div class="d-flex mb-3">
+            <input class="search-container" type="text" id="location" name="location" placeholder="Search for Hotels...">
+            <input type="submit" value="Search" class="s-button">
+        </div>
+        <div id="carouselExampleIndicators1" class="carousel slide " data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner Carousels">
+                <div class="carousel-item active">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.h0xaTC0lP39d1G-_thocZQHaEo&pid=Api&P=0&h=220" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="https://wallpapershome.com/images/wallpapers/grand-velas-riviera-maya-3300x2200-best-hotels-of-2017-tourism-travel-3172.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.hhj6J_WPJSZVVZ91Mf1L3AHaD4&pid=Api&P=0&h=220" class="d-block w-100" alt="..." />
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="mt-3 ">
+            <h1 class="holyday-head">Search for Flight</h1>
+            <form class="form-body ">
+                <label for="departure">Departure:</label>
+                <input class="form-details" type="text" id="departure" name="departure" required>
+
+                <label for="destination">Destination:</label>
+                <input class="form-details" type="text" id="destination" name="destination" required>
+
+                <label for="departure-date">Departure Date:</label>
+                <input class="form-details" type="date" id="departure-date" name="departure-date" required>
+
+                <label for="passengers">Passengers:</label>
+                <input class="form-details" type="number" id="passengers" name="passengers" min="1" max="10" required>
+
+                <input class="form-details" type="submit" value="Search Flights">
+            </form>
+        </div>
+        <h1 class="holyday-head mt-3">Holyday Specials:</h1>
+        <div id="Holyday-section">
+            <div class="card-holyday-container">
+                <div class="Holyday-card-container d-flex flex-row">
+                    <div>
+                        <h1 class="Holyday-card-container-heading">Araku</h1>
+                        <p class="Holyday-card-container-description">
+                            Tranquil Andhra hill spot with tribal charm.
+                        </p>
+                        <p class="Holyday-card-container-description">
+                            Duration: 5-7 Days
+                        </p>
+                        <p class="Holyday-card-container-description">
+                            Price: ₹10000/-
+                        </p>
+                    </div>
+
+                    <img src="https://lh6.googleusercontent.com/FiV3vxhITObO1LZQooAiOTda31SlrWGA8orp44qCKUogzc7GpL9fMbu6PvQEZmRE4trJ-6thEhJBAIdFF4rQTCkL9MAcHJktdtcWud5nJT0xWH26bq9tqrpvI9Jf0dhxV7bfc8mJ" class="holyday-img" />
+                </div>
+                <div class="Holyday-card-container d-flex flex-row">
+                    <div>
+                        <h1 class="Holyday-card-container-heading">Kerala </h1>
+                        <p class="Holyday-card-container-description">
+                            cenic backwaters, vibrant culture, and spicy cuisine epitomize Kerala's charm.
+                        </p>
+                        <p class="Holyday-card-container-description">
+                            Duration: 6-8 Days
+                        </p>
+                        <p class="Holyday-card-container-description">
+                            Price: ₹8000/-
+                        </p>
+                    </div>
+
+                    <img src="https://up.yimg.com/ib/th?id=OIP.q791mRXZ2bBaqnrcPjIx_AHaFC&%3Bpid=Api&rs=1&c=1&qlt=95&w=146&h=99" class="holyday-img" />
+                </div>
+                <div class="Holyday-card-container d-flex flex-row">
+                    <div>
+                        <h1 class="Holyday-card-container-heading">Himachal Pradesh </h1>
+                        <p class="Holyday-card-container-description">
+                            Serene, diverse, adventurous, scenic, cultural, mountainous, Himalayan.
+                        </p>
+                        <p class="Holyday-card-container-description">
+                            Duration: 9-10 Days
+                        </p>
+                        <p class="Holyday-card-container-description">
+                            Price: ₹15000/-
+                        </p>
+                    </div>
+
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.0rUIbFQyVEL-TuETD-OMfgHaEb&pid=Api&P=0&h=220" class="holyday-img" />
+                </div>
+                <div class="Holyday-card-container d-flex flex-row">
+                    <div>
+                        <h1 class="Holyday-card-container-heading">Andaman and Nicobar Islands </h1>
+                        <p class="Holyday-card-container-description">
+                            Island, tropical, biodiverse, remote, pristine, tribal, sandy, coral, turquoise.
+                        </p>
+                        <p class="Holyday-card-container-description">
+                            Duration: 7-10 days
+                        </p>
+                        <p class="Holyday-card-container-description">
+                            Price: ₹25,000
+                        </p>
+                    </div>
+
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.i95fEXY77Pfo2DBlzWNtQQHaEK&pid=Api&P=0&h=220" class="holyday-img" />
+                </div>
+            </div>
+        </div>
+        <h1 class="holyday-head mt-3">Visite more like this:</h1>
+        <div id="VisitMore-section">
+            <div class="card-holyday-container">
+                <div class="Holyday-card-container d-flex flex-row">
+                    <div>
+                        <h1 class="Holyday-card-container-heading">France</h1>
+                        <p class="Holyday-card-container-description">
+                            Timeless charm, culinary mastery, artistic grandeur, diverse landscapes; epitome of sophistication and cultural richness.
+                        </p>
+                        <button class="visit-button">Visit Now</button>
+                    </div>
+
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.gOiajMIog2Kbarg3VMx9RwHaE8&pid=Api&P=0&h=220" class="holyday-img" />
+                </div>
+            </div>
+            <div class="card-holyday-container">
+                <div class="Holyday-card-container d-flex flex-row">
+                    <div>
+                        <h1 class="Holyday-card-container-heading">Havasu Falls (Arizona)</h1>
+                        <p class="Holyday-card-container-description">
+                            Arizona oasis, turquoise waters cascade amidst red rock, a breathtaking natural wonder and hiker's paradise.
+                        </p>
+                        <button class="visit-button">Visit Now</button>
+                    </div>
+
+                    <img src="https://www.treehugger.com/thmb/irHbPZhHeWu9vJHKwpdMDncTPpU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-974530264-76f0cc2bbb7f4921938dc3fec31968e8.jpg" class="holyday-img" />
+                </div>
+            </div>
+        </div>
+         <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="follow-us-section-heading">Follow Us</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-twitter icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-instagram icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-facebook icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
